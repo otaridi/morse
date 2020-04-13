@@ -110,6 +110,9 @@ p {
   top: 30px;
   opacity: 0.4;
 }
+.img:hover {
+  opacity: 0.6;
+}
 #temp {
   width: 0;
   height: 0;

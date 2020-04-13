@@ -23,7 +23,6 @@ const textToMorse = (event) => {
   h1.innerHTML = textDecoder(event.target.value);
 };
 // EVENT LISTENNERS
-// from morse button
 fromMorse.addEventListener("click", () => {
   document.querySelector("p").style.display = "block";
   clearFields();
