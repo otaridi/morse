@@ -25,7 +25,7 @@ body {
   font-size: 1.2rem;
   padding-left: 30px;
   padding-top: 10px;
-  margin: 20px 0 0 5%;
+  margin: 20px 0 0 22px;
   border: 1px solid rgb(204, 199, 199);
   transition: 0.5s;
   resize: none;
@@ -62,7 +62,7 @@ body {
   transition: 0.3s;
 }
 #copy {
-  margin-left: 23px;
+  margin-left: 22px;
   cursor: pointer;
   position: absolute;
   top: 200px;
@@ -99,11 +99,11 @@ p {
 }
 
 .display {
-  background: url(https://i.ibb.co/sj38sN8/morse.png);
   width: 100%;
   height: 100%;
-  opacity: 0.3;
   position: relative;
+  top: 10px;
+  opacity: 0.3;
 }
 .display:hover {
   opacity: 0.5;
@@ -119,10 +119,24 @@ p {
     max-width: 100%;
   }
   .container {
-    width: 380px;
+    width: 390px;
   }
   .display {
     width: 90%;
     margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 390px) {
+  body {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .container {
+    width: 310px;
+  }
+  .btnContainer {
+    width: 60%;
+    margin-left: 20%;
   }
 }
