@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>morse decoder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="title">Simply Morse Translater</h3>
+      <div class="btnContainer">
+        <button id="button" class="morse">from morse</button>
+        <button id="btn" class="text">from text</button>
+      </div>
+      <textarea
+        type="text"
+        id="input"
+        class="input"
+        placeholder="try here"
+      ></textarea>
+      <button id="copy">copy result</button>
+      <div class="display"></div>
+      <p>
+        The space bettween letters is 3 unit<br />The space between words is 7
+        unit ( Morse Code rule )
+      </p>
+      <h2 id="H1"></h2>
+      <div id="temp"></div>
+    </div>
+  </body>
+</html>

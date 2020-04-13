@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.container {
+  width: 470px;
+  height: 400px;
+  margin: 10px auto;
+}
+.title {
+  text-align: center;
+  margin-top: 0;
+}
+.input {
+  display: block;
+  width: 90%;
+  height: 80px;
+  font-size: 1.2rem;
+  padding-left: 30px;
+  padding-top: 10px;
+  margin: 20px 0 0 5%;
+  border: 1px solid rgb(204, 199, 199);
+  transition: 0.5s;
+  resize: none;
+}
+.input::placeholder {
+  color: rgb(131, 129, 129);
+  opacity: 0.5;
+}
+.input:focus {
+  background-color: rgb(251, 251, 251);
+  border: 1px solid rgb(131, 129, 129);
+  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.75);
+  outline: none;
+  transition: 0.5s;
+}
+.morse,
+.text {
+  cursor: pointer;
+  height: 30px;
+  width: 45%;
+  transition: 0.3s;
+  outline: none;
+}
+.btnContainer {
+  width: 50%;
+  margin: 30px 0 0 25%;
+  display: flex;
+  justify-content: space-between;
+}
+.color {
+  background-color: rgb(202, 198, 198);
+  border: 2px solid rgb(131, 129, 129);
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+#copy {
+  margin-left: 23px;
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  z-index: 999;
+  transition: 0.6s;
+}
+#copy:focus {
+  background-color: rgb(202, 198, 198);
+  transition: 0.6s;
+  border: 2px solid rgb(88, 87, 87);
+  outline: none;
+}
+h2 {
+  width: 470px;
+  margin: 5px 0 0 0;
+  text-align: center;
+  white-space: pre-wrap;
+  position: absolute;
+  top: 222px;
+  text-shadow: 0px 0px 20px black;
+  word-break: break-all;
+}
+
+p {
+  width: 470px;
+  text-align: center;
+  margin: 5px 0 0 0;
+  white-space: pre-wrap;
+  position: absolute;
+  top: 175px;
+  display: none;
+  font-size: 1.1rem;
+  opacity: 0.4;
+}
+
+.display {
+  background: url(https://i.ibb.co/sj38sN8/morse.png);
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  position: relative;
+}
+.display:hover {
+  opacity: 0.5;
+}
+#temp {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 380px;
+  }
+  .display {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
